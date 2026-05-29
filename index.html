@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Dental Clinic | Creating Beautiful & Healthy Smiles</title>
+    <meta name="description" content="Advanced dental care, modern technology, and compassionate treatment for every patient at Shubham Dental Clinic in Surat, Gujarat.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="cursor-glow"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="ph-fill ph-tooth"></i>
+                <span>Shubham</span> Dental
+            </a>
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#services">Services</a>
+                <a href="#transformations">Smile Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#booking" class="btn btn-primary">Book Appointment</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero">
+            <div class="hero-bg">
+                <img src="C:/Users/nikhi/.gemini/antigravity-ide/brain/216e6c99-acf8-48c5-acbc-3ef10f38d28c/hero_bg_1780062533430.png" alt="Luxury Clinic Interior">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="particles" id="particles"></div>
+            <div class="container hero-content">
+                <div class="hero-text reveal-up">
+                    <h1>Creating Beautiful & <br><span class="text-gradient">Healthy Smiles</span></h1>
+                    <p>Advanced dental care, modern technology, and compassionate treatment for every patient.</p>
+                    <div class="hero-cta">
+                        <a href="#booking" class="btn btn-primary">Book Appointment</a>
+                        <a href="tel:+919227150531" class="btn btn-secondary">
+                            <i class="ph ph-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="floating-cards reveal-up" style="transition-delay: 0.2s;">
+                    <div class="glass-card stat-card float-anim-1">
+                        <div class="stat-icon"><i class="ph-fill ph-star"></i></div>
+                        <div class="stat-info">
+                            <strong>4.9/5</strong>
+                            <span>Patient Rating</span>
+                        </div>
+                    </div>
+                    <div class="glass-card stat-card float-anim-2">
+                        <div class="stat-icon"><i class="ph-fill ph-shield-check"></i></div>
+                        <div class="stat-info">
+                            <strong>100%</strong>
+                            <span>Safe & Sterile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. MEET OUR DOCTORS -->
+        <section id="doctors" class="doctors section-padding">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2>Meet Our <span class="text-gradient">Experts</span></h2>
+                    <p>Highly qualified professionals dedicated to your oral health and well-being.</p>
+                </div>
+                
+                <div class="doctors-grid">
+                    <div class="doctor-card glass-card reveal-up">
+                        <div class="doc-image">
+                            <img src="C:/Users/nikhi/.gemini/antigravity-ide/brain/216e6c99-acf8-48c5-acbc-3ef10f38d28c/dr_sonal_1780062552326.png" alt="Dr. Sonal R. Patel">
+                            <div class="doc-overlay"></div>
+                        </div>
+                        <div class="doc-info">
+                            <h3>Dr. Sonal R. Patel</h3>
+                            <span class="degree">BDS</span>
+                            <p>Specializing in modern dentistry and advanced smile aesthetics.</p>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="doc-image">
+                            <img src="C:/Users/nikhi/.gemini/antigravity-ide/brain/216e6c99-acf8-48c5-acbc-3ef10f38d28c/dr_raju_1780062572769.png" alt="Dr. Raju N. Patel">
+                            <div class="doc-overlay"></div>
+                        </div>
+                        <div class="doc-info">
+                            <h3>Dr. Raju N. Patel</h3>
+                            <span class="degree">MBBS, MD</span>
+                            <p>Comprehensive healthcare expertise ensuring complete patient safety and care.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. CLINIC TIMINGS -->
+        <section id="timings" class="timings section-padding">
+            <div class="container">
+                <div class="timings-wrapper glass-card reveal-up">
+                    <div class="timings-header">
+                        <h2>Clinic Hours</h2>
+                        <div class="status-indicator" id="statusIndicator">
+                            <span class="pulse-dot"></span>
+                            <span id="statusText">Checking status...</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timings-grid">
+                        <div class="timing-box">
+                            <i class="ph ph-sun"></i>
+                            <div class="timing-details">
+                                <h4>Morning (Mon-Sun)</h4>
+                                <p>10:00 AM – 1:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="timing-box">
+                            <i class="ph ph-moon"></i>
+                            <div class="timing-details">
+                                <h4>Evening (Mon-Sat)</h4>
+                                <p>5:00 PM – 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. COMPLETE DENTAL SOLUTIONS -->
+        <section id="services" class="services section-padding">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2>Complete <span class="text-gradient">Dental Solutions</span></h2>
+                    <p>Premium treatments using the latest technology and materials.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Dynamic rendering could be done via JS, but static is fine -->
+                    <div class="service-card glass-card reveal-up">
+                        <div class="service-icon"><i class="ph ph-sparkle"></i></div>
+                        <h3>Teeth Cleaning</h3>
+                        <p>Professional scaling and polishing for a healthier, brighter smile.</p>
+                    </div>
+                    <div class="service-card glass-card reveal-up">
+                        <div class="service-icon"><i class="ph ph-tooth"></i></div>
+                        <h3>Root Canal</h3>
+                        <p>Painless endodontic therapy to save severely decayed teeth.</p>
+                    </div>
+                    <div class="service-card glass-card reveal-up">
+                        <div class="service-icon"><i class="ph ph-screw"></i></div>
+                        <h3>Dental Implants</h3>
+                        <p>Permanent, natural-looking replacements for missing teeth.</p>
+                    </div>
+                    <div class="service-card glass-card reveal-up">
+                        <div class="service-icon"><i class="ph ph-magic-wand"></i></div>
+                        <h3>Teeth Whitening</h3>
+                        <p>Advanced laser whitening for immediate, brilliant results.</p>
+                    </div>
+                    <div class="service-card glass-card reveal-up">
+                        <div class="service-icon"><i class="ph ph-smiley"></i></div>
+                        <h3>Smile Designing</h3>
+                        <p>Customized aesthetic makeovers for your perfect smile.</p>
+                    </div>
+                    <div class="service-card glass-card reveal-up">
+                        <div class="service-icon"><i class="ph ph-brackets-curly"></i></div>
+                        <h3>Orthodontics</h3>
+                        <p>Braces and clear aligners to correct misaligned teeth.</p>
+                    </div>
+                    <div class="service-card glass-card reveal-up">
+                        <div class="service-icon"><i class="ph ph-baby"></i></div>
+                        <h3>Pediatric Dentistry</h3>
+                        <p>Gentle and friendly dental care for children of all ages.</p>
+                    </div>
+                    <div class="service-card glass-card reveal-up">
+                        <div class="service-icon"><i class="ph ph-star"></i></div>
+                        <h3>Cosmetic Dentistry</h3>
+                        <p>Veneers, bonding, and enhancements for a flawless look.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SMILE TRANSFORMATIONS -->
+        <section id="transformations" class="transformations section-padding">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2>Real Smiles, <span class="text-gradient">Real Transformations</span></h2>
+                    <p>Advanced treatments, personalized care, life-changing results.</p>
+                </div>
+
+                <div class="transformation-showcase reveal-up">
+                    <div class="slider-container">
+                        <img src="C:/Users/nikhi/.gemini/antigravity-ide/brain/216e6c99-acf8-48c5-acbc-3ef10f38d28c/smile_after_1780062613620.png" alt="After Treatment" class="img-after">
+                        
+                        <div class="img-before-wrapper" id="beforeWrapper">
+                            <img src="C:/Users/nikhi/.gemini/antigravity-ide/brain/216e6c99-acf8-48c5-acbc-3ef10f38d28c/smile_before_1780062598369.png" alt="Before Treatment" class="img-before">
+                        </div>
+                        
+                        <div class="slider-handle" id="sliderHandle">
+                            <i class="ph ph-arrows-left-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="transformation-floating glass-card float-anim-1">
+                        <i class="ph-fill ph-quotes"></i>
+                        <p>"Absolutely life changing! The doctors are brilliant."</p>
+                        <div class="stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. TRUSTED BY THOUSANDS -->
+        <section id="stats" class="stats section-padding">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal-up">
+                        <h3 class="counter" data-target="5000">0</h3>
+                        <span>+ Happy Patients</span>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.1s;">
+                        <h3 class="counter" data-target="12000">0</h3>
+                        <span>+ Treatments</span>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.2s;">
+                        <h3 class="counter" data-target="800">0</h3>
+                        <span>+ 5-Star Reviews</span>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.3s;">
+                        <h3 class="counter" data-target="15">0</h3>
+                        <span>+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. SCHEDULE YOUR VISIT -->
+        <section id="booking" class="booking section-padding">
+            <div class="container">
+                <div class="booking-wrapper glass-card reveal-up">
+                    <div class="booking-content">
+                        <h2>Schedule Your <span class="text-gradient">Visit</span></h2>
+                        <p>Take the first step towards a healthier, brighter smile. Fill out the form or contact us directly.</p>
+                        
+                        <div class="contact-methods">
+                            <a href="https://wa.me/919227150531" class="btn btn-whatsapp" target="_blank">
+                                <i class="ph-fill ph-whatsapp-logo"></i> WhatsApp Us
+                            </a>
+                            <a href="tel:+919227150531" class="btn btn-secondary">
+                                <i class="ph ph-phone"></i> +91 92271 50531
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="booking-form" onsubmit="event.preventDefault(); alert('Form submitted! (Mockup)');">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="+91 00000 00000" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Treatment Interested In</label>
+                            <select required>
+                                <option value="" disabled selected>Select Treatment</option>
+                                <option>General Checkup</option>
+                                <option>Teeth Cleaning</option>
+                                <option>Root Canal</option>
+                                <option>Dental Implants</option>
+                                <option>Smile Designing</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Time Preference</label>
+                                <select required>
+                                    <option value="" disabled selected>Select Time</option>
+                                    <option>Morning (10 AM - 1 PM)</option>
+                                    <option>Evening (5 PM - 9 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Request Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CONTACT SHUBHAM DENTAL -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal-up">
+                        <h2>Visit <span class="text-gradient">Our Clinic</span></h2>
+                        <div class="info-card glass-card">
+                            <i class="ph-fill ph-map-pin"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Siddharth Complex, 3-4, Varachha Main Road,<br>
+                                Opposite Vitthalnagar, Hirabag Main Road,<br>
+                                Hirabaug, Kodiyar Nagar,<br>
+                                Surat, Gujarat 395006</p>
+                            </div>
+                        </div>
+                        <div class="info-card glass-card mt-4">
+                            <i class="ph-fill ph-phone-call"></i>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>+91 92271 50531</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container glass-card reveal-up">
+                        <!-- Embed Google Maps via iframe (placeholder for location) -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.539268688463!2d72.8465495!3d21.210459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f44aaaaaaab%3A0x0!2zMjHCsDEyJzM3LjciTiA3MsKwNTAnNDcuNiJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="ph-fill ph-tooth"></i>
+                        <span>Shubham</span> Dental
+                    </a>
+                    <p>Advanced dental care, modern technology, and compassionate treatment for every patient.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#transformations">Smile Gallery</a></li>
+                        <li><a href="#booking">Book Appointment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Teeth Cleaning</a></li>
+                        <li><a href="#">Root Canal</a></li>
+                        <li><a href="#">Dental Implants</a></li>
+                        <li><a href="#">Smile Designing</a></li>
+                        <li><a href="#">Orthodontics</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Shubham Dental Clinic. All Rights Reserved.</p>
+                <p>Designed for Excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
